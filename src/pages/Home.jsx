@@ -6,7 +6,6 @@ export default function Home() {
 
   const navigate = useNavigate();
 
-  // Handle Join Room Function
   const handleJoinRoom = useCallback(() => {
     if (!value) {
       return alert("Please Enter Room Id");
@@ -17,13 +16,9 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center items-center h-screen bg-gray-900">
-        {/* Main Div  */}
         <div className="">
-          {/* Input And Button  */}
           <div className="input bg-gray-950 px-5 py-6 rounded-xl border border-gray-600 shadow-md ">
-            {/* Video Calling Image  */}
             <div className="flex justify-center mb-8">
-              {/* Image Tag  */}
               <img
                 className="w-20 border rounded-full border-gray-600"
                 src="https://cdn-icons-png.flaticon.com/128/11104/11104179.png"
@@ -31,7 +26,6 @@ export default function Home() {
               />
             </div>
 
-            {/* Input Tag */}
             <input
               type="text"
               value={value}
@@ -41,10 +35,8 @@ export default function Home() {
               placeholder="Enter Room Code"
             />
 
-            {/* Br Tag */}
             <br />
 
-            {/* Button Tag */}
             <button
               type="button"
               onClick={handleJoinRoom}

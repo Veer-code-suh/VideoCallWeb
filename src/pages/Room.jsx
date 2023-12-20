@@ -23,7 +23,7 @@ export default function Room() {
       sharedLinks: [
         {
           name: "Copy Link",
-          url: `https://videocallweb.vercel.app/room/${roomId}`,
+          url: `https://videocallingapp-six.vercel.app/room/${roomId}`,
         },
       ],
       scenario: {
